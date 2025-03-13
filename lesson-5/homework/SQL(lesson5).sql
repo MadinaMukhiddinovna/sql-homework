@@ -157,7 +157,8 @@ FROM DiscontinuedProducts AS D;
 SELECT ProductID, ProductName, Stock,
        IIF(Stock > 0, 'Available', 'Out of Stock') AS StockStatus
 FROM Products;
--------
+-------30
 SELECT CustomerID FROM Customers
 EXCEPT
 SELECT CustomerID FROM VIP_Customers;
+---------------------------------------------------------------------------------------------------------
